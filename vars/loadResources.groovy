@@ -5,7 +5,7 @@ def call(Map args = [:]) {
 
   def yaml = readYaml(file: args.file)
 
-  
+
   // resources can be:
   //  - a single resource
   //  - an array of resources
