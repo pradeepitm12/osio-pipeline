@@ -50,6 +50,16 @@ def mergeEnvs(args, spec){
 def specForImage(image, version){
   // TODO use proper images
   def specs = [
+    "golang": [
+      "latest": [
+        image: "sbose78/jenkins-agent-golang-1.10-centos7",
+        shell: '/bin/bash'
+      ],
+      "1.10": [
+        image: "sbose78/jenkins-agent-golang-1.10-centos7",
+        shell: '/bin/bash'
+      ],
+    ],
     "node": [
       "latest": [
             image: "openshift/jenkins-agent-nodejs-8-centos7",
