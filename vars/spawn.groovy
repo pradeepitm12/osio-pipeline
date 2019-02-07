@@ -52,11 +52,11 @@ def specForImage(image, version){
   def specs = [
     "golang": [
       "latest": [
-        image: "sbose78/jenkins-agent-golang-1.10-centos7",
+        image: "pradeepitm12/jenkins-agent-golang-1.8-centos7",
         shell: '/bin/bash'
       ],
       "1.10": [
-        image: "sbose78/jenkins-agent-golang-1.10-centos7",
+        image: "pradeepitm12/jenkins-agent-golang-1.8-centos7",
         shell: '/bin/bash'
       ],
     ],
