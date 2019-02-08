@@ -16,6 +16,8 @@ def call(Map args = [:], body = null){
     }
 
     def spec = specForImage(args.image, args.version?: 'latest')
+  //Pradeep
+      echo "Pradeep **** - >"+spec
 
     // read and merge environment variable passed via spwan api and spec
     def envVars = mergeEnvs(args, spec)
@@ -55,7 +57,7 @@ def specForImage(image, version){
         image: "pradeepitm12/jenkins-agent-golang-1.8-centos7",
         shell: '/bin/bash'
       ],
-      "1.10": [
+      "1.8": [
         image: "pradeepitm12/jenkins-agent-golang-1.8-centos7",
         shell: '/bin/bash'
       ],
