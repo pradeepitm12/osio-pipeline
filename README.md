@@ -341,7 +341,7 @@ The route generated after above step will be added as annotation in the pipeline
 
 ### spawn
 
-This is an API to spawn an pod as per requirement and execute the commands in the pod.
+This is an API to spawn a pod as per requirement and execute the commands in the pod.
 
 ```groovy
     spawn (image: 'oc`) {

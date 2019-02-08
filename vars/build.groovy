@@ -33,6 +33,7 @@ def call(Map args) {
     def gitURL = shWithOutput(this, "git config remote.origin.url")
     def commitHash = shWithOutput(this, "git rev-parse --short HEAD")
     def status = ""
+    echo "Pradeep **** calling spawn"
     spawn(image: image, version: config.version(), commands: args.commands) {
       Events.emit("build.start")
       try {
@@ -50,6 +51,7 @@ def call(Map args) {
         error "Build failed"
       }
     }
+    echo "Pradeep ****spawn end"
   }
 }
 
